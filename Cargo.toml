@@ -1,0 +1,9 @@
+[package]
+name = "yarl"
+version = "0.1.0"
+authors = ["Maxime Blanc <max@jellycat.fr>"]
+edition = "2018"
+
+[dependencies]
+bracket-lib = "0.8.0"
+legion = "0.4.0"
