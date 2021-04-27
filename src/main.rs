@@ -10,7 +10,7 @@ mod prelude {
     pub const SCREEN_HEIGHT: i32 = 50;
     pub const DISPLAY_WIDTH: i32 = SCREEN_WIDTH / 2;
     pub const DISPLAY_HEIGHT: i32 = SCREEN_HEIGHT / 2;
-    pub const TILE_SIZE: i32 = 16;
+    pub const TILE_SIZE: i32 = 30;
     pub use crate::camera::*;
     pub use crate::map::*;
     pub use crate::map_builder::*;
@@ -57,9 +57,9 @@ fn main() -> BError {
         .with_dimensions(DISPLAY_WIDTH, DISPLAY_HEIGHT)
         .with_tile_dimensions(TILE_SIZE, TILE_SIZE)
         .with_resource_path("resources")
-        .with_font("pico16s.png", TILE_SIZE, TILE_SIZE)
-        .with_simple_console(DISPLAY_WIDTH, DISPLAY_HEIGHT, "pico16s.png")
-        .with_simple_console_no_bg(DISPLAY_WIDTH, DISPLAY_HEIGHT, "pico16s.png")
+        .with_font("potash30s.png", TILE_SIZE, TILE_SIZE)
+        .with_simple_console(DISPLAY_WIDTH, DISPLAY_HEIGHT, "potash30s.png")
+        .with_simple_console_no_bg(DISPLAY_WIDTH, DISPLAY_HEIGHT, "potash30s.png")
         .build()?;
 
     main_loop(context, State::new())

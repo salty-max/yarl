@@ -14,7 +14,7 @@ impl Player {
         ctx.set(
             self.position.x - camera.left_x,
             self.position.y - camera.top_y,
-            color_from_palette("yellow").unwrap(),
+            color_from_palette("white").unwrap(),
             color_from_palette("black").unwrap(),
             to_cp437('@'),
         )

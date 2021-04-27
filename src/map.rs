@@ -29,7 +29,7 @@ impl Map {
                             ctx.set(
                                 x - camera.left_x,
                                 y - camera.top_y,
-                                color_from_palette("dark_purple").unwrap(),
+                                color_from_palette("white").unwrap(),
                                 color_from_palette("black").unwrap(),
                                 to_cp437('.'),
                             );
@@ -38,7 +38,7 @@ impl Map {
                             ctx.set(
                                 x - camera.left_x,
                                 y - camera.top_y,
-                                color_from_palette("dark_purple").unwrap(),
+                                color_from_palette("white").unwrap(),
                                 color_from_palette("black").unwrap(),
                                 to_cp437('#'),
                             );
