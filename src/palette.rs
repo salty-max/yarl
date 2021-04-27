@@ -24,9 +24,9 @@ pub fn color_from_palette(c: &str) -> Result<RGB, String> {
 
     let mut color: Option<RGB> = None;
 
-    for (k, _) in palette.iter() {
+    for (k, v) in palette.iter() {
         if &c == k {
-            color = Some(RGB::from_hex(&c).unwrap());
+            color = Some(RGB::from_hex(v).unwrap());
         }
     }
 
